@@ -11,12 +11,15 @@ html{
 body{
     background: #0a4d49;
     color: white;
+    background-color: #2f2f2f;
+opacity: 1;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #2f2f2f 9px ), repeating-linear-gradient( #5898e155, #5898e1 );
 }
 #header{
     margin-right: 20px;
     width: 100%;
     height: 100vh;
-    background-image: url(./images/background.gif);
+    /* background-image: url(./images/background.gif); */
     background-size: auto;
     background-position: center;
 
@@ -116,7 +119,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #3483dd;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -141,4 +144,57 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+.codebooter-icons{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.codebooter-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    /* display:inline-block; */
+    transition: transform 0.5s;
+}
+.codebooter-icons a:hover{
+    color: #3483dd;
+    transform: translateY(-5px);
+}
+
+.member{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.memberProfile{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.memberProfile img{
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    transition: transform 0.5s;
+}
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #3483dd;
+    transform: translateY(-5px);
 }
